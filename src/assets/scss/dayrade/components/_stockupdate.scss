@@ -1,0 +1,25 @@
+.dayrade-stock-update-container {
+  height: 4rem;
+  padding: 0.5rem 0;
+  background-color: #212121;
+
+  .dayrade-stock-update-card {
+    width: 160px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+
+  .dayrade-stock-update-card-positive {
+    background-color: #cdff7b;
+  }
+
+  .dayrade-stock-update-card-negative {
+    background-color: #ff59a9;
+  }
+}

@@ -1,0 +1,90 @@
+.dayrade-ec-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+
+  .dayrade-ec-calendar-container {
+    flex: 65% 0 0;
+    max-width: 1261px;
+    margin-top: -10px;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: scroll;
+
+    .dayrade-ec-calendar-wrapper {
+      height: 90%;
+    }
+
+    .dayrade-ec-calendar-pagination-container {
+      height: 30px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .dayrade-ec-pagination-wrapper {
+        height: 30px;
+      }
+
+      .dayrade-ec-pagination {
+        li a {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .dayrade-ec-aside-container {
+    flex: 33% 0 0;
+    max-width: 376px;
+    height: 100%;
+    padding: 0 1rem;
+  }
+
+  // .border-secondary {
+  //   border-color: #08b1ba;
+  // }
+
+  .dayrade-ec-calendar-scrollcontainer {
+    height: 100%;
+  }
+
+  .dayrade-ec-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    background-color: #353535;
+
+    tr {
+      background-color: #353535;
+    }
+
+    tr th:first-child,
+    tr td:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    tr th:last-child,
+    tr td:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    thead tr th {
+      background-color: #212121 !important;
+    }
+
+    tr:nth-child(even) {
+      background-color: #212121; /* Light gray for even rows */
+    }
+
+    tr:nth-child(odd) {
+      background-color: rgba(33, 33, 33, 0.6); /* White for odd rows */
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.dayrade-sidebar {
+  padding-bottom: 4rem;
+}
+
+.dayrade-screensize-page-container {
+  width: 100%;
+  height: calc(100vh - 9rem);
+  overflow: hidden;
+}
+
+.dayrade-link {
+  color: #d7d7d7;
+
+  &:hover {
+    color: #cdff7b;
+  }
+}
+
+.flag-country-select-options-container {
+  max-height: 12rem;
+}
+
+.flag-country-select-icon-container {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.flag-country-select-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
+}
