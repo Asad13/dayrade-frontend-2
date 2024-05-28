@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 //components
 import VerticalNav from './vertical-nav';
+import SidebarFooter from './sidebar-footer';
 
 //scrollbar
 import Scrollbar from 'smooth-scrollbar';
@@ -75,7 +76,7 @@ const Sidebar = memo((props) => {
           ' '
         )} ${sidebarMenuStyle} ${
           sidebarHide.join(' ') ? 'sidebar-none' : 'sidebar'
-        }   sidebar-base  `}
+        }   sidebar-base dayrade-sidebar`}
         data-sidebar="responsive"
       >
         <div className="sidebar-header d-flex align-items-center justify-content-start">
@@ -123,19 +124,19 @@ const Sidebar = memo((props) => {
           </div>
         </div>
         <div
-          className="pt-0 sidebar-body data-scrollbar"
+          className="pt-0 sidebar-body data-scrollbar dayrade-sidebar-nav"
           data-scroll="1"
           id="my-scrollbar"
         >
           {/* sidebar-list class to be added after replace css */}
-          <div
-            className="sidebar-list navbar-collapse dayrade-sidebar"
-            id="sidebar"
-          >
+          <div className="sidebar-list navbar-collapse" id="sidebar">
             <VerticalNav />
           </div>
         </div>
-        <div className="sidebar-footer"></div>
+        <div className="sidebar-footer sidebar-body dayrade-sidebar-footer">
+          <div className="sidebar-footer-divider"></div>
+          <SidebarFooter />
+        </div>
       </aside>
     </Fragment>
   );

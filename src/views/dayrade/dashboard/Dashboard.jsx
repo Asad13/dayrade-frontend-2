@@ -9,6 +9,7 @@ import Chart from 'react-apexcharts';
 import { Link } from 'react-router-dom';
 
 import { countries } from '../../../assets/data/countries';
+import Head from '../../../components/dayrade/common/Head';
 
 const colors = ['#cdff7b'];
 
@@ -80,6 +81,7 @@ const Dashboard = () => {
 
   return (
     <>
+      <Head title="Dashboard" />
       <div className="dayrade-dashboard-container">
         <div className="dayrade-dashboard-charts">
           {charts.map((item, index) => (

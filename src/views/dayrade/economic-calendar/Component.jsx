@@ -6,6 +6,7 @@ import { Table } from 'react-bootstrap';
 import StockUpdate from '../../../components/dayrade/stock-update';
 // componets
 import Card from '../../../components/bootstrap/card';
+import Head from '../../../components/dayrade/common/Head';
 
 //img
 // import shapes1 from '../../../assets/images/shapes/01.png';
@@ -49,11 +50,12 @@ for (let i = 0; i < 20; i++) {
   table.push(demoTableData);
 }
 
-const EconomicCalendar = () => {
+export const Component = () => {
   const [date, setDate] = useState(new Date());
 
   return (
     <>
+      <Head title="Economic Calendar" />
       <div className="dayrade-screensize-page-container">
         <div className="dayrade-ec-container">
           <div className="dayrade-ec-calendar-container">
@@ -241,4 +243,4 @@ const EconomicCalendar = () => {
   );
 };
 
-export default EconomicCalendar;
+Component.displayName = 'EconomicCalendar';

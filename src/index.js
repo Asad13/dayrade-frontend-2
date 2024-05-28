@@ -1,22 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import Provider from './Provider';
 import App from './App';
-// import reportWebVitals from './reportWebVitals';
-
-//store
-
-import { Provider } from 'react-redux';
-//reducer
-import { store } from './store';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <Provider store={store}>
+    <Provider>
       <App />
+      <ReactQueryDevtools initialIsOpen={false} />
     </Provider>
   </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
