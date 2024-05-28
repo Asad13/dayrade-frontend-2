@@ -18,7 +18,7 @@ import './assets/scss/rtl.scss';
 import './assets/scss/customizer.scss';
 import './assets/custom/scss/custom.scss';
 import './assets/scss/dayrade.scss';
-import './styles/index.scss';
+import './styles/dayradetailwind.scss';
 
 // Redux Selector / Action
 import { useDispatch } from 'react-redux';
