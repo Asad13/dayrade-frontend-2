@@ -1,5 +1,6 @@
 .auth-page {
-  @apply tw-flex tw-h-full tw-min-h-screen tw-w-full tw-flex-col tw-items-center tw-justify-center tw-p-4 lg:tw-p-6;
+  @apply tw-flex tw-h-full tw-min-h-screen tw-w-full tw-flex-col tw-items-center tw-justify-center;
+  @apply tw-p-4 lg:tw-p-6;
 }
 
 .auth-heading {
@@ -7,7 +8,8 @@
 }
 
 .auth-main {
-  @apply tw-mt-4 tw-w-[600px] tw-max-w-full;
+  @apply tw-mt-4 tw-max-w-full;
+  width: 600px;
 }
 
 .auth-form-container {
@@ -23,7 +25,9 @@
 }
 
 .auth-btn-container {
-  @apply tw-flex tw-items-center tw-justify-center tw-py-[10px];
+  @apply tw-flex tw-items-center tw-justify-center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .auth-btn {
@@ -31,7 +35,8 @@
 }
 
 .auth-submit-btn {
-  @apply tw-bg-primary-dark tw-font-medium tw-text-background-dark tw-transition-all tw-duration-150 tw-ease-out hover:tw-bg-secondary-dark;
+  @apply tw-bg-primary-dark tw-font-medium tw-text-background-dark;
+  @apply tw-transition-all tw-duration-150 tw-ease-out hover:tw-bg-secondary-dark;
 }
 
 .auth-form-bottom {
@@ -39,7 +44,8 @@
 }
 
 .auth-form-feedback-container {
-  @apply tw-mb-3 tw-rounded-md tw-border-[1px] tw-border-error-dark tw-p-2 tw-text-center;
+  @apply tw-mb-3 tw-rounded-md tw-border-error-dark tw-p-2 tw-text-center;
+  border-width: 1px;
 }
 
 .auth-form-feedback-heading {

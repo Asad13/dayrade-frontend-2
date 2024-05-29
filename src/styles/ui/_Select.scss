@@ -4,7 +4,11 @@
   }
 
   .select {
-    @apply tw-flex tw-h-[44px] tw-w-full tw-cursor-pointer tw-items-center tw-justify-between tw-rounded-md tw-border-[1px] tw-border-on-dark tw-py-2 tw-pl-3 tw-text-sm tw-leading-[14px] focus:tw-border-primary-dark;
+    @apply tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-justify-between;
+    @apply tw-rounded-md tw-border-on-dark tw-py-2 tw-pl-3 tw-text-sm focus:tw-border-primary-dark;
+    height: 44px;
+    border-width: 1px;
+    line-height: 14px;
 
     &::after,
     &[aria-expanded='true']::after {
@@ -48,10 +52,13 @@
   }
 
   .select-options-container {
-    @apply tw-absolute tw-left-0 tw-top-full tw-z-10 tw-mt-2 tw-w-full tw-overflow-y-auto tw-rounded-md tw-border-[1px] tw-border-on-dark tw-bg-background-dark tw-py-1;
+    @apply tw-absolute tw-left-0 tw-top-full tw-z-10 tw-mt-2 tw-w-full tw-overflow-y-auto;
+    @apply tw-rounded-md tw-border-on-dark tw-bg-background-dark tw-py-1;
+    border-width: 1px;
   }
 
   .select-option {
-    @apply tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-py-2 tw-pl-3 tw-text-sm tw-leading-[14px];
+    @apply tw-flex tw-w-full tw-cursor-pointer tw-items-center tw-py-2 tw-pl-3 tw-text-sm;
+    line-height: 14px;
   }
 }

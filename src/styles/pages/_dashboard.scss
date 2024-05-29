@@ -3,7 +3,7 @@
 }
 
 .dashboard-personal-info-container {
-  @apply tw-flex tw-w-full tw-flex-col md:tw-flex-row md:tw-gap-x-4 lg:tw-w-[297px] lg:tw-flex-col;
+  @apply tw-flex tw-w-full tw-flex-col md:tw-flex-row md:tw-gap-x-4 lg:tw-flex-col;
 }
 
 .dashboard-charts-container {
@@ -11,5 +11,12 @@
 }
 
 .dashboard-chart-container {
-  @apply tw-max-w-full tw-flex-[440px];
+  @apply tw-max-w-full;
+  flex: 440px;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-personal-info-container {
+    width: 297px;
+  }
 }

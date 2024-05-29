@@ -5,7 +5,7 @@
   }
 
   .default-modal {
-    @apply tw-bg-surface-dark tw-text-on-dark;
-    @apply tw-w-80 tw-max-w-[90%] tw-rounded-lg tw-p-5;
+    @apply tw-bg-surface-dark tw-text-on-dark tw-w-80 tw-rounded-lg tw-p-5;
+    max-width: 90%;
   }
 }

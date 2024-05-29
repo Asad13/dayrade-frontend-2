@@ -1,13 +1,22 @@
 @layer components {
   .page-container {
-    @apply tw-px-1 tw-pt-[2px] lg:tw-px-4 lg:tw-pr-2 lg:tw-pt-[6px];
+    @apply tw-px-1 lg:tw-px-4 lg:tw-pr-2;
+    padding-top: 2px;
   }
 
   .page-heading-container {
-    @apply tw-mb-4 tw-ml-[57px] tw-rounded-lg tw-bg-surface-dark tw-px-6 tw-py-4 tw-drop-shadow-whiteBottomBorderShadow lg:tw-ml-0;
+    @apply tw-mb-4 tw-rounded-lg tw-bg-surface-dark tw-px-6 tw-py-4;
+    @apply tw-drop-shadow-whiteBottomBorderShadow lg:tw-ml-0;
+    margin-left: 57px;
   }
 
   .page-heading {
     @apply heading2 tw-text-textSecondary;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    padding-top: 6px;
   }
 }

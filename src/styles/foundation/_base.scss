@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -18,7 +20,6 @@
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }

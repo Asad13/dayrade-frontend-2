@@ -11,7 +11,8 @@
     .loader {
       @apply tw-relative tw-inline-block tw-h-12 tw-w-12;
       @apply tw-animate-spin tw-rounded-full;
-      @apply tw-border-[6px] tw-border-dotted tw-border-dark;
+      @apply tw-border-dotted tw-border-dark;
+      border-width: 6px;
     }
   }
 

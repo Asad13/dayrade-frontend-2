@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer components {
   .form-inner-row {
     @apply md:tw-flex md:tw-items-center;
@@ -8,7 +12,7 @@
   }
 
   .form-label {
-    @apply tw-text-sm tw-text-on-dark sm:tw-text-[16px];
+    @apply tw-text-sm tw-text-on-dark sm:tw-text-lg;
   }
 
   .form-control-container {
@@ -16,7 +20,8 @@
   }
 
   .form-control {
-    @apply tw-w-full tw-rounded-md tw-border tw-border-on-dark tw-text-xs tw-leading-3 tw-outline-none focus:tw-border-primary-dark sm:tw-text-sm sm:tw-leading-[14px];
+    @apply tw-w-full tw-rounded-md tw-border tw-border-on-dark tw-text-xs tw-leading-3;
+    @apply tw-outline-none focus:tw-border-primary-dark sm:tw-text-sm;
   }
 
   .form-control-spacing {
@@ -28,7 +33,11 @@
   }
 
   .input-error-feedback {
-    @apply tw-mt-1 tw-block tw-h-[22px] tw-w-full tw-overflow-x-hidden tw-text-[10px] tw-leading-[11px] tw-text-error-dark sm:tw-h-[28px] sm:tw-text-xs sm:tw-leading-[14px];
+    @apply tw-mt-1 tw-block tw-w-full tw-overflow-x-hidden;
+    @apply tw-text-error-dark sm:tw-h-7 sm:tw-text-xs;
+    height: 22px;
+    font-size: 10px;
+    line-height: 11px;
   }
 
   .custom-input {
@@ -44,7 +53,8 @@
   }
 
   .checkbox-radio-label {
-    @apply tw-ml-2 tw-inline-block -tw-translate-y-[1px] tw-cursor-pointer;
+    @apply tw-ml-2 tw-inline-block tw-cursor-pointer;
+    transform: translateY(-1px);
   }
 
   .form-btn {
@@ -53,5 +63,15 @@
 
   .form-btn-submitting {
     @apply tw-cursor-not-allowed;
+  }
+}
+
+@media (min-width: 640px) {
+  .form-control {
+    line-height: 14px;
+  }
+
+  .input-error-feedback {
+    line-height: 14px;
   }
 }
