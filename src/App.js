@@ -5,8 +5,6 @@ import DayradeRouter from './router/dayrade-router';
 import AuthRouter from './router/dayrade-auth-router';
 import { useUserContext } from './hooks/useUserContext';
 import { checkAuth } from './services/auth';
-import './styles/dayradetailwind.scss';
-import Loader from './ui/Loader';
 //scss
 import './assets/modules/landing-pages/scss/landing-pages.scss';
 import 'shepherd.js/dist/css/shepherd.css';
@@ -19,6 +17,8 @@ import './assets/scss/rtl.scss';
 import './assets/scss/customizer.scss';
 import './assets/custom/scss/custom.scss';
 import './assets/scss/dayrade.scss';
+import './styles/dayradetailwind.scss';
+import Loader from './ui/Loader';
 
 // Redux Selector / Action
 import { useDispatch } from 'react-redux';
